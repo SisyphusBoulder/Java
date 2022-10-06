@@ -21,9 +21,11 @@ public class StringExercises {
 
 		int[] counter = new int[emails.length];
 		
+		//List of special characters forbidden in email
 		String invalidSpecials = "!£$%^&*()--+=[]{};:#<>,?/";
 		
-		String requiredSpecials = "@.";
+		//list of special characters necessary for email
+		//String requiredSpecials = "@.";
 		
 		int invalid = 0;
 		
@@ -46,6 +48,11 @@ public class StringExercises {
 			
 			}
 			
+			if (!email.contains("@") ||  !email.contains(".")){
+				
+				invalid++;
+				counter[j] = 1;
+			}
 			j++;	
 
 		}
