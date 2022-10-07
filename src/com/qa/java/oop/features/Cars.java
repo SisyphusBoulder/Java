@@ -1,6 +1,6 @@
 package com.qa.java.oop.features;
 
-public class Cars {
+abstract public class Cars {
 
 	int id;
 	String name;
@@ -27,7 +27,9 @@ public class Cars {
 
 
 
-	void carDetails() {
+	abstract public void carDetails();
+	
+	/*{
 
 		System.out.println("Car ID : " + id);
 		System.out.println("Car Name : " + name);
@@ -35,5 +37,12 @@ public class Cars {
 		System.out.println("Car EngineCC : " + engineCC);
 		System.out.println("Car fuelType : " + fuelType);
 		System.out.println("Car manufacturingYear : " + manufacturingYear);
-	}
+	}*/
+	
+	abstract public void Car();
+	
+	/*{
+		
+		System.out.println("Car Make - Car");
+	}*/
 }

@@ -25,9 +25,25 @@ public class BMW extends Cars{
 		this.maxTorque = maxTorque;
 		
 	}
-	void displayBMWDetails() {
+	public void displayBMWDetails(Cars car) {
 		
-		carDetails();
+		CarService.carDetails(car);
+		System.out.println("Number of cylinders : " + noOfCylinders);
+		System.out.println("Max Torque : " + maxTorque);
+	}
+	
+	public void Car() {
+		System.out.println("Car Type - BMW");
+	}
+
+	@Override
+	public void carDetails() {
+		System.out.println("Car ID : " + id);
+		System.out.println("Car Name : " + name);
+		System.out.println("Car Price : £" + price);
+		System.out.println("Car EngineCC : " + engineCC);
+		System.out.println("Car fuelType : " + fuelType);
+		System.out.println("Car manufacturingYear : " + manufacturingYear);
 		System.out.println("Number of cylinders : " + noOfCylinders);
 		System.out.println("Max Torque : " + maxTorque);
 	}

@@ -25,9 +25,25 @@ public class Audi extends Cars{
 		this.isEVAvailable = isEVAvailable;
 		
 	}
-	void displayAudiDetails() {
+	public void displayAudiDetails(Cars car) {
 		
-		carDetails();
+		CarService.carDetails(car);
+		System.out.println("Audi Model : " + model);
+		System.out.println("Is EV Available : " + isEVAvailable);
+	}
+	
+	public void Car() {
+		System.out.println("Car Type - Audi");
+	}
+
+	@Override
+	public void carDetails() {
+		System.out.println("Car ID : " + id);
+		System.out.println("Car Name : " + name);
+		System.out.println("Car Price : £" + price);
+		System.out.println("Car EngineCC : " + engineCC);
+		System.out.println("Car fuelType : " + fuelType);
+		System.out.println("Car manufacturingYear : " + manufacturingYear);
 		System.out.println("Audi Model : " + model);
 		System.out.println("Is EV Available : " + isEVAvailable);
 	}
