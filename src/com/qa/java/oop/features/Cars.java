@@ -39,7 +39,7 @@ abstract public class Cars {
 		System.out.println("Car manufacturingYear : " + manufacturingYear);
 	}*/
 	
-	abstract public void Car();
+	abstract public String Car();
 	
 	/*{
 		

@@ -1,23 +1,12 @@
-package com.qa.java.oop.features;
+package com.qa.java.oop.features.interfaces;
 
-public class Audi extends Cars{
+public class Audi extends CarProperties implements ICars{
 	
-	public Audi() {
-		super();
-		System.out.println("Audi() constructor");
-		
-	}
-	
+
 	String model;
 	boolean isEVAvailable;
 	
 	
-	public Audi(String model, boolean isEVAvailable) {
-		super();
-		this.model = model;
-		this.isEVAvailable = isEVAvailable;
-		
-	}
 	
 	public Audi(int id, String name, float price, int engineCC, String fuelType, int manufacturingYear, String model, boolean isEVAvailable) {
 		super(id, name, price, engineCC, fuelType, manufacturingYear);
@@ -25,13 +14,14 @@ public class Audi extends Cars{
 		this.isEVAvailable = isEVAvailable;
 		
 	}
-	public void displayAudiDetails(Cars car) {
+	/*public void displayAudiDetails(CarProperties car) {
 		
 		CarService.carDetails(car);
 		System.out.println("Audi Model : " + model);
 		System.out.println("Is EV Available : " + isEVAvailable);
-	}
+	}*/
 	
+	@Override
 	public String Car() {
 		return "Car Type - Audi";
 	}

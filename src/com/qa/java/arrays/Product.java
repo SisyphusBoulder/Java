@@ -1,4 +1,4 @@
-package ClassesObjects;
+package com.qa.java.arrays;
 
 public class Product {
 

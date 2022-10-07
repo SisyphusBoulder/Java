@@ -1,4 +1,4 @@
-package Arrays;
+package com.qa.java.arrays;
 
 public class Util {
 	

@@ -1,4 +1,4 @@
-package Arrays;
+package com.qa.java.oop;
 
 public class Product {
 
