@@ -2,8 +2,8 @@ package com.qa.java.oop;
 
 public class Product {
 
-	int id;
-	String name;
+	public int id;
+	public String name;
 	float price;
 	String category;
 	char rating;
@@ -41,7 +41,7 @@ public class Product {
 		this.isAvailable = isAvailable;
 	}
 	
-	void getProductInfo() {
+	public void getProductInfo() {
 		
 		System.out.println("ID : " + id);
 		System.out.println("Name : " + name);
