@@ -27,9 +27,9 @@ public class Util {
 			}
 		}
 		//product = new Product(001, "chicken", 5.01f, "poultry", 'B', 10f, true);
-		if(product == null) 
+		if(product == null) {
 			throw new ProductNotFoundException("This product does not exist!");
-		
+		}
 		return product;
 		
 	}

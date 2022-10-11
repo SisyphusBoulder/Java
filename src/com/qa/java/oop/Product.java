@@ -17,7 +17,7 @@ public class Product {
 	
 	
 	//No Arg
-	Product() {
+	public Product() {
 		
 		id = 001;
 		name = "product";
