@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ProductRepository {
 	
-	public static List<Product> readProductCSVFile(String filepath) {
+	public List<Product> readProductCSVFile(String filepath) {
 		List<Product> products = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(new File(filepath)))) {
 			System.out.println(br.readLine()); //read header of csv file
@@ -40,9 +40,11 @@ public class ProductRepository {
 			}
 		}
 		catch (FileNotFoundException e) {
+			System.out.println("File not found! Please check the filename and location!");
 			e.printStackTrace();
 		}
 		catch(IOException e) {
+			System.out.println("IO Exception! Please check the code and the file!");
 			e.printStackTrace();
 		}
 		

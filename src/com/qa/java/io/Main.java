@@ -4,14 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		ProductService productService = new ProductService();
 		
-		ProductService.getProductInfo();
+		productService.getProductInfo();
 		
-		System.out.println("Cheapest Product : " + ProductService.getCheapestProduct());
+		System.out.println("Cheapest Product : " + productService.getCheapestProduct());
 		
-		System.out.println("Dearest Product : " + ProductService.getDearestProduct());
+		System.out.println("Dearest Product : " + productService.getDearestProduct());
 		
-		System.out.println("Highest Rated Product : " + ProductService.getHighestRating());
+		System.out.println("Highest Rated Product : " + productService.getHighestRating());
 
 	}
 

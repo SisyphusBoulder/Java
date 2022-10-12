@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ProductRepository {
 	
-	public static Product[] readProductCSVFile(String filepath) {
+	public Product[] readProductCSVFile(String filepath) {
 		Product[] products = new Product[3];
 		try (BufferedReader br = new BufferedReader(new FileReader(new File(filepath)))) {
 			System.out.println(br.readLine()); //read header of csv file

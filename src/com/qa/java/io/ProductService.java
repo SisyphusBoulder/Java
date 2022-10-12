@@ -2,9 +2,11 @@ package com.qa.java.io;
 
 public class ProductService {
 	
-	static Product[] products = ProductRepository.readProductCSVFile("C://Mono//ProductCSV.csv");
 	
-	static void getProductInfo() {
+	ProductRepository productRepository = new ProductRepository();
+	Product[] products = productRepository.readProductCSVFile("C://Mono//ProductCSV.csv");
+	
+	 void getProductInfo() {
 		
 		for(Product p : products) {
 			System.out.println("ID : " + p.getID());
@@ -17,7 +19,7 @@ public class ProductService {
 		}
 	}
 	
-	static String getCheapestProduct() {
+	 String getCheapestProduct() {
 		
 		float small = products[0].getPrice();
 		String item = products[0].getName();
@@ -36,7 +38,7 @@ public class ProductService {
 		return item;
 	}
 	
-	static String getDearestProduct() {
+	 String getDearestProduct() {
 		
 		float big = products[0].getPrice();
 		String item = products[0].getName();
@@ -53,7 +55,7 @@ public class ProductService {
 		return item;
 	}
 	
-	static String getHighestRating() {
+	 String getHighestRating() {
 		
 		int big = (int)products[0].getRating();
 		String item = products[0].getName();
