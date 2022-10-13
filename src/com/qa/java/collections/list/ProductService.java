@@ -2,7 +2,7 @@ package com.qa.java.collections.list;
 
 import java.util.List;
 
-public class ProductServices {
+public class ProductService {
 	
 	ProductRepository productRepository = new ProductRepository();
 

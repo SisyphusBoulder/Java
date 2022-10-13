@@ -9,10 +9,10 @@ public class Main {
 		
 		CarService carService = new CarService();
 		
-		System.out.println(carService.Car(audi));
+		System.out.println(carService.carType(audi));
 		carService.carDetails(audi);
 		
-		System.out.println(carService.Car(BMW));
+		System.out.println(carService.carType(BMW));
 		carService.carDetails(BMW);
 
 	}

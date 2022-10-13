@@ -1,6 +1,6 @@
 package com.qa.java.oop.features.interfaces;
 
-public class Audi extends CarProperties implements ICars{
+public class Audi extends CarProperties implements ICar{
 	
 
 	String model;
@@ -22,7 +22,7 @@ public class Audi extends CarProperties implements ICars{
 	}*/
 	
 	@Override
-	public String Car() {
+	public String carType() {
 		return "Car Type - Audi";
 	}
 

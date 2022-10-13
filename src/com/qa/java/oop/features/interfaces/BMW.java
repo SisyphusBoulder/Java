@@ -1,6 +1,6 @@
 package com.qa.java.oop.features.interfaces;
 
-public class BMW extends CarProperties implements ICars{
+public class BMW extends CarProperties implements ICar{
 	
 	int noOfCylinders;
 	int maxTorque;
@@ -20,7 +20,7 @@ public class BMW extends CarProperties implements ICars{
 
 	
 	@Override
-	public String Car() {
+	public String carType() {
 		return "Car Type - BMW";
 	}
 

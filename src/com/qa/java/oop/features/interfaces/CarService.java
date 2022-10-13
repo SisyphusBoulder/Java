@@ -2,14 +2,14 @@ package com.qa.java.oop.features.interfaces;
 
 public class CarService{
 	
-	public void carDetails(ICars car) {
+	public void carDetails(ICar car) {
 		
 		car.carDetails();
 	}
 
 
-	public String Car(ICars car) {
-		return car.Car();
+	public String carType(ICar car) {
+		return car.carType();
 		
 	}
 
